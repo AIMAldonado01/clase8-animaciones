@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* KEYFRAME */
+/* SINTAXIS  */
+@keyframes nombre-animacion {
+    
+    0% {
+        background-color: red;
+    }
+
+    50%{
+        background-color: blue;
+    }
+
+    100%{
+        background-color: yellow;
+    }
+
+}
+
+/* animacion de mover un cuadrado de izquierda a derecha. */
+
+@keyframes movimiento {
+
+    0% {
+        background-color: red;
+        transform: translateX(0);
+    }
+
+    50%{
+        background-color: green;
+        transform: translateX(200px);
+    }
+
+    100% {
+        background-color: darkorchid;
+        transform: translateX(500px);
+    }
+
+}
+
+.cajita{
+    background-color: gold;
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+
+    transition: ease-in 1s;
+}
+
+.cajita:hover{
+      /* ANIMATION NAME  */
+      animation-name: movimiento;
+      /* ANIMATION DURATION */
+      animation-duration: 4s;
+      /* ANIMATION-TIMING-FUNCTION */
+      animation-timing-function: linear;
+      /* ANIMATION-ITERATION-COUNT */
+      animation-iteration-count: infinite ;
+}
+
+
+/* CAJITAS */
+.cajita2{
+    background-color: black;
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.cajita2:hover{
+     /* ANIMATION NAME  */
+     animation-name: movimiento;
+     /* ANIMATION DURATION */
+     animation-duration: 4s;
+     /* ANIMATION-TIMING-FUNCTION */
+     animation-timing-function: linear;
+     /* ANIMATION-ITERATION-COUNT */
+     animation-iteration-count: infinite ;
+}
+
+.cajita3{
+    background-color: rgb(120, 42, 42);
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+}
+/*  */
+.cajita3:hover{
+    /* ANIMATION NAME  */
+    animation-name: movimiento;
+    /* ANIMATION DURATION */
+    animation-duration: 4s;
+    /* ANIMATION-TIMING-FUNCTION */
+    animation-timing-function: ease-in;
+    /* ANIMATION-ITERATION-COUNT */
+    animation-iteration-count: infinite ;
+}
+
+/*  */
+.cajita4{
+    background-color: gray;
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+}
+/*  */
+.cajita4:hover{
+    /* ANIMATION NAME  */
+    animation-name: movimiento;
+    /* ANIMATION DURATION */
+    animation-duration: 4s;
+    /* ANIMATION-TIMING-FUNCTION */
+    animation-timing-function: ease-in-out;
+    /* ANIMATION-ITERATION-COUNT */
+    animation-iteration-count: infinite ;
+}
+
+

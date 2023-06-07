@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.gradient-lineal{
+    /* Ancho y alto */
+    height: 250px;
+    width: 260px;
+    /* Agregar gradiente */
+
+    /* linear-gradient (hacia donde, color, color */
+    background: linear-gradient(to top, #87CEEB, #0000CD);
+}
+
+/* Radial */
+
+.gradient-radial{
+    /* Ancho y alto */
+    height: 250px;
+    width: 260px;
+    /* radial-gradient */
+
+    background: radial-gradient(circle, #FF0000, #90EE90);
+
+    margin-bottom: 2rem;
+}
+
+/* ejemplo real */
+
+.gradient-button{
+    margin: 2rem;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    /* Bordes */
+    border: 2px solid black;
+    border-radius: 5px;
+    /* Cursor */
+    cursor: pointer;
+    /* GRADIENT */
+    background: rgb(52,177,157);
+    background: radial-gradient(circle, rgba(52,177,157,1) 0%, rgba(70,252,85,1) 95%);
+}
+
+.enlace-hover{
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 2rem;
+    /* TRANSITION */
+    transition: all 1s;
+}
+
+.enlace-hover:hover{
+    text-decoration: underline;
+}

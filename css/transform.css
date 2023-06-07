@@ -1,0 +1,103 @@
+/* REGLAS GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Translate */
+.caja-translate{
+    /* ALTO | ANCHO  */
+    height: 250px;
+    width: 250px;
+    background-color: blue;
+
+    /* TRANSLATE */
+    /* transform: translate(x,y); */
+    /* transform: translate(-100px, 50px); */
+    /* transform: translateX(250px); */
+    transform: translateY(-50px);
+}
+
+/* ROTATE */
+
+.caja-rotate{
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    margin-left: 5rem;
+
+    /* ROTATE */
+    transform: rotate(75deg);
+}
+
+
+/* SCALE . */
+
+.parrafo-scale{
+   margin: 2rem 5rem;
+    background-color: black;
+    color: white;
+    /* TRANSFORM - SCALE  */
+
+    transform: scale(1);
+}
+
+
+/* SKEW */
+
+.skew{
+    background-color: yellow;
+    height: 250px;
+    width: 250px;
+    margin: 5rem auto;
+
+    /* SKEW */
+    transform: skew(-10deg, -20deg);
+
+    /* TRANSITION */
+    transition: all 2s;
+}
+
+.skew:hover{
+    background-color: rebeccapurple;
+    transform: skew(30deg, 30deg);
+}
+
+
+/* EJEMPLO REAL  */
+.icon-wpp{
+    width: 50px;
+    position: absolute;
+    right: 10px;
+    margin-bottom: 10px;
+    /* Transition */
+    transition: all 2s;
+}
+
+.icon-wpp:hover{
+    transform: rotate(360deg);
+}
+
+
+/* img-fondo */
+.img-fondo{
+    width: 350px;
+    height: 350px;
+    /* BACKGROUND-IMAGE */
+    background-image: url(https://phantom-expansion.unidadeditorial.es/d0cca5c893ce20d70c8bcabef282b7be/crop/0x725/2043x1875/resize/828/f/jpg/assets/multimedia/imagenes/2022/05/20/16530388017130.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    /* TRANSITION */
+    transition: all 1s;
+}
+
+.img-fondo:hover{
+    transform: translateX(450px);
+    background-image: url(https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/huracan/2023/model_chooser/huracan_evo_spyder_m.jpg);
+}
+
+/* enlace-hover */
+
